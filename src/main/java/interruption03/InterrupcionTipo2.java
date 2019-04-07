@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 /**
  * 
- * El segundo método para controlar que se envían interrupciones al hilo que consume mucho tiempo
+ * El segundo método para controlar que se envían interrupciones a un hilo que quiero parar
  * es (en vez de try-catch a una InterruptionException), 
  * busco un punto en el hilo donde se consuma mucho tiempo, y ahí planto un IF preguntando si se 
  * ha lanzado ya la interrupción: "Thread.getCurrentThread().isInterrupted()"
