@@ -64,10 +64,10 @@ public class CuandoFinalizanLosDAEMON_3 {
 //			un try-catch y también un if
 //			por tanto, dependiendo del azar, la interrupción la podía recoger cualquiera de los dos
 //			en el try-catch había olvidado poner el return 
-//			así que cuando entraba por el try-catch, el proceso seguía y seguía hasta el final
+//			así que cuando entraba por el try-catch, el hilo seguía y seguía hasta el final
 //			en vez de parar como yo quería
 //			porque sólo lanzo una interrupción desde el main
-//			y ésta ya la había tratado el catch sn parar el hilo
+//			y ésta ya la había tratado el catch de modo que no detenía el hilo
 			
 			for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
 				try {
